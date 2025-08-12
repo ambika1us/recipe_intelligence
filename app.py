@@ -10,7 +10,7 @@ import re
 # Load Environment Variables (Neon)
 # -------------------
 load_dotenv()
-DATABASE_URL = st.secrets("NEON_DATABASE_URL")
+DATABASE_URL = st.secrets["NEON_DATABASE_URL"]
 engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 
 st.title("🍲 Ingredient Intelligence — Neon-Enabled")
